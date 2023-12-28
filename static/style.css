@@ -1,0 +1,146 @@
+
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500vh;
+    
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .msger {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 850px;
+    margin: 15px 15px;
+		
+  }
+  
+  .msger-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: var(--border);
+	
+  }
+  
+  .msger-chat {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  .msger-chat::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .msg {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+	
+  }
+  .msg:last-of-type {
+    margin: 0;
+  }
+  .msg-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: #ddd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .msg-bubble {
+    max-width: 450px;
+    padding: 15px;
+    border-radius: 15px;
+    background: var(--left-msg-bg);
+  }
+  .msg-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+	
+  }
+  .msg-info-name {
+    margin-right: 10px;
+    font-weight: bold;
+	color:white;
+  }
+  .msg-info-time {
+    font-size: 0.85em;
+  }
+  
+  .left-msg .msg-bubble {
+    border-bottom-left-radius: 0;
+  }
+  
+  .right-msg {
+    flex-direction: row-reverse;
+  }
+  .right-msg .msg-bubble {
+    background: var(--right-msg-bg);
+    color: #fff;
+    border-bottom-right-radius: 0;
+  }
+  .right-msg .msg-img {
+    margin: 0 0 0 10px;
+  }
+
+  #right-smg .msg-img{
+    margin: 0 0 0 10px;
+  }
+  
+  .msger-inputarea {
+    display: flex;
+    padding: 10px;
+	width:220px;
+	
+
+    border-top: var(--border);
+  }
+  .msger-inputarea * {
+    padding: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+  }
+  .msger-input {
+    flex: 1;
+    background: #6B728E;
+	height:100px;
+	width :450px;
+  }
+  .msger-send-btn {
+    margin-left: 10px;
+    background: #16FF00;
+    color: #6B728E;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.23s;
+  }
+  .msger-send-btn:hover {
+    background: rgb(5, 86, 153);
+  }
+  
+  .msger-chat {
+    background-color: brown;
+  }
+ input::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: red;
+}

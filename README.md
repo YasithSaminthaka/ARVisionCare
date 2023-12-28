@@ -1,0 +1,2 @@
+# camgirl
+A JavaScript project
